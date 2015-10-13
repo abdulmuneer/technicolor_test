@@ -20,5 +20,6 @@ def main(global_config, **settings):
     config.add_route('user', '/user')
     config.add_route('login', '/login')
     config.add_route('status', '/status')
+    config.add_route('list', '/list')
     config.scan()
     return config.make_wsgi_app()
